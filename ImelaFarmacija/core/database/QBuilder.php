@@ -9,10 +9,10 @@ class QBuilder {
 	}
 
 
-	public static function properties ($classA){
+	public static function properties ($classP){
 		
 		$i=0;
-		foreach ((array) new $classA as $key => $value) {
+		foreach ((array) new $classP as $key => $value) {
 			$propertyListInp[$i]=$key;
 			$i=$i+1;
 		}

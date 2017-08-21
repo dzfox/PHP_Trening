@@ -11,11 +11,11 @@
 <tr>
     <td cellpadding="30">
 <?php
-	foreach ($users as $user) {
-		echo '<li>'.
-				$user->Ime.' '.$user->Prezime, 
-				($user->Zaposlen)? ', Zaposlen(a)':', Nije zaposlen(a)'
-			.'</li>';
-	}
+	// foreach ($users as $user) {
+	// 	echo '<li>'.
+	// 			$user->Ime.' '.$user->Prezime, 
+	// 			($user->Zaposlen)? ', Zaposlen(a)':', Nije zaposlen(a)'
+	// 		.'</li>';
+	// }
 
 	require 'view/partials/footer.php';

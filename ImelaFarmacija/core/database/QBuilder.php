@@ -31,7 +31,7 @@ class QBuilder {
 			$propertyList.=', '.$value;
 		}
 		
-		$properties=trim($atributeList,', ');
+		$properties=trim($propertyList,', ');
 
 		$propertiesAll=[$properties,$propertyListInput];
 		//vd($propertiesAll);
@@ -53,7 +53,7 @@ class QBuilder {
 		$properties=QBuilder::properties($intoClass)['0'];
 		//vd($properties);
 
-		$statement=$this->pdo->prepare("insert into {$table} ({$atributes}) values ({$values})");
+		$statement=$this->pdo->prepare("insert into {$table} ({$properties}) values ({$values})");
 		$statement->execute();
 
 		return 'USPESNO UNESEN USER!';

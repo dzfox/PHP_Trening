@@ -5,7 +5,7 @@
 	echo '<h1>Dodaj korisnika</h1>';
 
 	echo '<form method="POST" action="/korisnici">';
-		foreach (QBuilder::atributes('User')['1'] as $key => $value) {
+		foreach (QBuilder::properties('User')['1'] as $key => $value) {
 			echo $value.': <input name="'.$value.'"></input><br>';
 		}
 		echo '<button type="submit">Submit</button>';

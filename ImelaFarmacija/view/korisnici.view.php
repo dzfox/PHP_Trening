@@ -2,7 +2,7 @@
 
 require 'view/partials/header.php';
 
-	echo '<h3>'.$insert.'</h3>';
+	//echo '<h3>'.$insert.'</h3>';
     
 
     echo '<ul>';
